@@ -5,7 +5,7 @@ module.exports = {
     require("tailwindcss"),
     require("autoprefixer"),
     require("@fullhuman/postcss-purgecss")({
-      content: ["woot.html"],
+      content: ["index.html"],
     }),
     require("cssnano")({
       preset: "default",

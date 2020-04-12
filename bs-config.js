@@ -63,7 +63,7 @@ module.exports = {
     {
       module: "bs-html-injector",
       options: {
-        files: ["woot.html"],
+        files: ["index.html"],
       },
     },
   ],
