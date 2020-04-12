@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "posttest": "npm run format",
+    "format": "prettier --loglevel warn --write \"**/*.{js,json,html,css,md}\""
   },
   "keywords": [],
   "author": "Robin Millette <robin@millette.info> (http://robin.millette.info/)",
@@ -15,6 +17,7 @@
     "cssnano": "^4.1.10",
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",
+    "prettier": "^2.0.4",
     "tailwindcss": "^1.2.0"
   }
 }
