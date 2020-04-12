@@ -15,7 +15,7 @@ module.exports = {
   ui: {
     port: 3001,
   },
-  files: false,
+  files: ["main.js", "output4.css"],
   watchEvents: ["change"],
   watch: false,
   ignore: [],
@@ -63,7 +63,7 @@ module.exports = {
     {
       module: "bs-html-injector",
       options: {
-        files: ["./woot.html"],
+        files: ["woot.html"],
       },
     },
   ],
