@@ -7,3 +7,6 @@ Thumbs.db
 *.sublime-workspace
 *.log
 yarn.lock
+index-orig.html
+output.css
+tw.code-workspace
