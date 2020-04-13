@@ -15,7 +15,7 @@ module.exports = {
   ui: {
     port: 3001,
   },
-  files: ["main.js", "output4.css"],
+  files: ["main.js", "output.css"],
   watchEvents: ["change"],
   watch: false,
   ignore: [],
