@@ -4,3 +4,16 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+body {
+  background: -200px -1200px url("beach.jpg");
+}
+
+body > div {
+  place-items: center center;
+  @apply grid;
+  @apply h-screen;
+  @apply m-0;
+  color: skyblue;
+  text-shadow: 4px 4px 5px black;
+}
