@@ -17,3 +17,16 @@ body > div {
   color: skyblue;
   text-shadow: 4px 4px 5px black;
 }
+
+div > footer,
+div > ul,
+div > form {
+  @apply p-2;
+  background: black;
+}
+
+ul.list-check {
+  @apply px-3;
+  list-style-position: inside;
+  list-style-type: "✓ ";
+}
