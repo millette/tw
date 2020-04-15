@@ -6,21 +6,27 @@
 @tailwind utilities;
 
 body {
-  background: -1300px -1200px url("beach.jpg");
+  background-image: url("beach-560.jpg");
   color: skyblue;
 }
 
+@media (min-width: 1024px) {
+  body {
+    background-image: url("beach-1024.jpg");
+  }
+}
+
 h1 {
-  text-align: center;
+  @apply text-center;
   text-shadow: 4px 4px 5px black;
 }
 
 body > div {
-  place-items: center center;
   @apply grid;
   @apply h-screen;
   @apply m-0;
   @apply pb-12;
+  place-items: center center;
 }
 
 ul,
@@ -31,7 +37,9 @@ form {
 }
 
 ul.list-check {
-  @apply px-3;
-  list-style-position: inside;
   list-style-type: "✓ ";
+}
+
+input {
+  color: black;
 }
