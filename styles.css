@@ -6,9 +6,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-blue-300;
   background-image: url("beach-560.jpg");
-  /* color: skyblue; */
 }
 
 @media (min-width: 1024px) {
@@ -17,32 +15,14 @@ body {
   }
 }
 
-h1 {
-  @apply text-center;
+.shadow-black {
   text-shadow: 4px 4px 5px black;
 }
 
-body > div {
-  @apply grid;
-  @apply h-screen;
-  @apply m-0;
-  @apply pb-12;
+.place-items-center {
   place-items: center center;
 }
 
-ul,
-footer,
-form {
-  @apply p-2;
-  @apply bg-black;
-  /* background: black; */
-}
-
-ul.list-check {
+.list-check {
   list-style-type: "✓ ";
-}
-
-input {
-  /* color: black; */
-  @apply text-black;
 }
