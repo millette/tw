@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "postcss styles.css -o output.css -w",
+    "deploy": "gh-pages -d dist",
+    "css:watch": "postcss styles.css -o output.css -w",
+    "css": "NODE_ENV=production postcss styles.css -o output.css",
     "start": "browser-sync start --config bs-config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "posttest": "npm run format",
