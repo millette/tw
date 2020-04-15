@@ -6,8 +6,9 @@
 @tailwind utilities;
 
 body {
+  @apply text-blue-300;
   background-image: url("beach-560.jpg");
-  color: skyblue;
+  /* color: skyblue; */
 }
 
 @media (min-width: 1024px) {
@@ -33,7 +34,8 @@ ul,
 footer,
 form {
   @apply p-2;
-  background: black;
+  @apply bg-black;
+  /* background: black; */
 }
 
 ul.list-check {
@@ -41,5 +43,6 @@ ul.list-check {
 }
 
 input {
-  color: black;
+  /* color: black; */
+  @apply text-black;
 }
