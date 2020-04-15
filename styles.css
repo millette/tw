@@ -6,7 +6,13 @@
 @tailwind utilities;
 
 body {
-  background: -200px -1200px url("beach.jpg");
+  background: -1300px -1200px url("beach.jpg");
+  color: skyblue;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 4px 4px 5px black;
 }
 
 body > div {
@@ -14,13 +20,12 @@ body > div {
   @apply grid;
   @apply h-screen;
   @apply m-0;
-  color: skyblue;
-  text-shadow: 4px 4px 5px black;
+  @apply pb-12;
 }
 
-div > footer,
-div > ul,
-div > form {
+ul,
+footer,
+form {
   @apply p-2;
   background: black;
 }
