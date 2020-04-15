@@ -6,11 +6,11 @@
     <title>llololo</title>
     <link rel="stylesheet" type="text/css" href="/output.css" />
   </head>
-  <body>
+  <body class="bg-cover">
     <div class="container">
-      <h1 class="text-4xl m:text-5xl">Launching soon?</h1>
+      <h1 class="text-3xl md:text-4xl">Launching soon?</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <ul class="list-check sm:order-last">
+        <ul class="list-check px-3 list-inside sm:order-last md:text-2xl">
           <li>Design your launch page</li>
           <li>Promote it</li>
           <li>Tune it</li>
@@ -19,14 +19,15 @@
         </ul>
 
         <form>
-          <h2 class="text-2xl">Pre-register now</h2>
-          <label
-            >Your email address:
+          <label>
+            <h2 class="text-2xl">Your email address</h2>
             <input
-              class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+              class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal"
               type="email"
               placeholder="jane@example.com"
-          /></label>
+            />
+          </label>
+          <button type="submit">Pre-register</button>
         </form>
       </div>
       <footer class="text-center absolute inset-x-0 bottom-0">
