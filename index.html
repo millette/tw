@@ -14,7 +14,7 @@
         </h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <ul
-            class="p-2 bg-black list-check px-3 list-inside sm:order-last md:text-2xl"
+            class="bg-black list-check p-3 list-inside sm:order-last md:text-2xl"
           >
             <li>Design your launch page</li>
             <li>Promote it</li>
@@ -23,31 +23,37 @@
             <li>Collect leads</li>
           </ul>
 
-          <form class="p-2 bg-black">
+          <form class="p-3 bg-black">
             <label>
-              <h2 class="text-2xl">Your email address</h2>
+              <h2 class="text-2xl">Enter your email</h2>
               <input
                 class="text-black placeholder-blue-900 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block w-full appearance-none leading-normal"
+                required
                 type="email"
                 placeholder="jane@example.com"
               />
             </label>
-            <button type="submit">Pre-register</button>
+            <button
+              class="w-full mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              type="submit"
+            >
+              Alert me when available
+            </button>
           </form>
         </div>
         <footer
           class="p-2 bg-black text-center absolute inset-x-0 bottom-0 text-sm"
         >
+          <p class="font-bold">
+            A Waglo Labs creation ©&nbsp;2020
+          </p>
           <p>
             Image:
             <a
               href="https://commons.wikimedia.org/wiki/File:Beach_at_Main_Beach,_Queensland_02.jpg"
-              >Beach at Main Beach, Queensland 02 by <b>Kgbo</b> © 2018 CC BY-SA
-              4.0</a
+              >Beach at Main Beach, Queensland 02 by <b>Kgbo</b> ©&nbsp;2018 CC
+              BY-SA 4.0</a
             >
-          </p>
-          <p class="font-bold">
-            A creation of Waglo Labs © 2020
           </p>
         </footer>
       </div>
