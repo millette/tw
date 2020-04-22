@@ -26,3 +26,111 @@ body {
 .list-check {
   list-style-type: "✓ ";
 }
+
+header {
+  grid-area: header;
+}
+
+#features {
+  grid-area: features;
+}
+
+form {
+  grid-area: content;
+}
+
+#about {
+  grid-area: about;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "features"
+    "content"
+    "about"
+    "footer";
+}
+
+/*
+#about {
+  height: 100vh;
+}
+*/
+
+@media (min-width: 560px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header   header"
+      "content  features"
+      "about    about"
+      "footer   footer";
+  }
+
+  header {
+    height: 15vh;
+  }
+
+  form {
+    height: 65vh;
+  }
+
+  footer {
+    height: 15vh;
+  }
+
+  #about {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      "header   header    header"
+      "content  features  about"
+      "footer   footer    footer";
+  }
+
+  header {
+    height: 15vh;
+  }
+
+  form {
+    height: 65vh;
+  }
+
+  footer {
+    height: 15vh;
+  }
+
+  /*
+  #about {
+    height: 80vh;
+  }
+  */
+}
+
+/*
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content ad"
+      "footer footer  footer"
+   }
+   nav ul {
+     flex-direction: column;
+   }
+}
+*/
