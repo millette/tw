@@ -15,7 +15,7 @@ body {
   }
 }
 
-.shadow-black {
+.rym-shadow {
   text-shadow: 4px 4px 5px black;
 }
 
@@ -48,6 +48,7 @@ footer {
 }
 
 .wrapper {
+  place-items: center;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
@@ -58,15 +59,23 @@ footer {
     "footer";
 }
 
-/*
-#about {
-  height: 100vh;
+header,
+footer {
+  height: 14vh;
 }
-*/
+
+form,
+#features {
+  height: 32vh;
+}
+
+#about {
+  height: 80vh;
+}
 
 @media (min-width: 560px) {
   .wrapper {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header   header"
       "content  features"
@@ -74,26 +83,15 @@ footer {
       "footer   footer";
   }
 
-  header {
-    height: 15vh;
-  }
-
-  form {
+  form,
+  #features {
     height: 65vh;
-  }
-
-  footer {
-    height: 15vh;
-  }
-
-  #about {
-    height: 80vh;
   }
 }
 
 @media (min-width: 768px) {
   .wrapper {
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "header   header    header"
       "content  features  about"
@@ -101,36 +99,16 @@ footer {
   }
 
   header {
-    height: 15vh;
+    height: 10vh;
   }
 
-  form {
+  form,
+  #features,
+  #about {
     height: 65vh;
   }
 
   footer {
     height: 15vh;
   }
-
-  /*
-  #about {
-    height: 80vh;
-  }
-  */
 }
-
-/*
-@media (min-width: 700px) {
-  .wrapper {
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
-      "header header  header"
-      "nav    content sidebar"
-      "nav    content ad"
-      "footer footer  footer"
-   }
-   nav ul {
-     flex-direction: column;
-   }
-}
-*/
