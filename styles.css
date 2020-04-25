@@ -80,4 +80,14 @@ footer {
       "content  features  about"
       "footer   footer    footer";
   }
+
+  form,
+  #features,
+  #about {
+    min-height: 13rem;
+    max-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
