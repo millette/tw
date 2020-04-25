@@ -7,6 +7,8 @@
 
 body {
   background-image: url("beach-560.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 1024px) {
@@ -17,10 +19,6 @@ body {
 
 .rym-shadow {
   text-shadow: 4px 4px 5px black;
-}
-
-.place-items-center {
-  place-items: center center;
 }
 
 .list-check {
@@ -48,7 +46,8 @@ footer {
 }
 
 .wrapper {
-  place-items: center;
+  height: 140vh;
+  place-items: center center;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
@@ -59,56 +58,27 @@ footer {
     "footer";
 }
 
-header,
-footer {
-  height: 14vh;
-}
-
-form,
-#features {
-  height: 32vh;
-}
-
-#about {
-  height: 80vh;
-}
-
 @media (min-width: 560px) {
   .wrapper {
+    height: 200vh;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 2fr 3fr 0;
     grid-template-areas:
       "header   header"
       "content  features"
       "about    about"
       "footer   footer";
   }
-
-  form,
-  #features {
-    height: 65vh;
-  }
 }
 
 @media (min-width: 768px) {
   .wrapper {
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
       "header   header    header"
       "content  features  about"
       "footer   footer    footer";
-  }
-
-  header {
-    height: 10vh;
-  }
-
-  form,
-  #features,
-  #about {
-    height: 65vh;
-  }
-
-  footer {
-    height: 15vh;
   }
 }
