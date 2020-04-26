@@ -1,10 +1,8 @@
-/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/* purgecss end ignore */
-
 @tailwind utilities;
 
+/* main background image */
 body {
   background-image: url("beach-560.jpg");
   background-size: cover;
@@ -17,6 +15,7 @@ body {
   }
 }
 
+/* misc styles using (@apply) tailwind */
 form,
 #features,
 #about {
@@ -116,6 +115,7 @@ footer {
     "footer";
 }
 
+/* layouts by breakpoint */
 @screen sm {
   #wrapper {
     height: 200vh;
