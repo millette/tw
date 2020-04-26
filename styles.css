@@ -24,14 +24,18 @@ form,
 }
 
 header {
-  text-shadow: 4px 4px 5px black;
-  @apply text-3xl text-blue-300;
+  @apply w-full p-1 bg-blue-300 text-center;
+}
+
+h1 {
+  @apply text-3xl;
 }
 
 footer {
   @apply w-full bg-blue-300 p-1 text-center sticky bottom-0 text-sm;
 }
 
+header,
 form,
 #features,
 #about {
@@ -123,6 +127,10 @@ footer {
       "about    about"
       "footer   footer";
   }
+
+  header {
+    @apply w-full;
+  }
 }
 
 @screen md {
@@ -136,9 +144,11 @@ footer {
       "footer   footer    footer";
   }
 
+  /*
   header {
     @apply text-4xl py-4;
   }
+  */
 
   footer {
     @apply static bottom-auto;
