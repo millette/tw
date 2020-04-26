@@ -17,12 +17,38 @@ body {
   }
 }
 
-.rym-shadow {
+form,
+#features,
+#about {
+  @apply bg-blue-300 p-3;
+}
+
+header {
   text-shadow: 4px 4px 5px black;
+  @apply text-3xl text-blue-300;
+}
+
+footer {
+  @apply w-full bg-blue-300 p-1 text-center sticky bottom-0 text-sm;
+}
+
+form,
+#features,
+#about {
+  @apply w-11/12;
+}
+
+#features {
+  min-width: 16rem;
+}
+
+h2 {
+  @apply text-2xl;
 }
 
 .list-check {
   list-style-type: "✓ ";
+  @apply list-inside;
 }
 
 /* Define grid areas */
@@ -46,7 +72,7 @@ footer {
   grid-area: footer;
 }
 
-.wrapper {
+#wrapper {
   height: 140vh;
   place-items: center center;
   display: grid;
@@ -58,8 +84,8 @@ footer {
     "footer";
 }
 
-@media (min-width: 560px) {
-  .wrapper {
+@screen sm {
+  #wrapper {
     height: 200vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 2fr 3fr 0;
@@ -71,8 +97,9 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
-  .wrapper {
+@screen md {
+  #wrapper {
+    @apply h-screen;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
@@ -81,13 +108,19 @@ footer {
       "footer   footer    footer";
   }
 
+  header {
+    @apply text-4xl py-4;
+  }
+
+  footer {
+    @apply static bottom-auto;
+  }
+
   form,
   #features,
   #about {
     min-height: 13rem;
     max-width: 18rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @apply flex flex-col justify-center;
   }
 }
