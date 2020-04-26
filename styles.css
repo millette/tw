@@ -144,12 +144,6 @@ footer {
       "footer   footer    footer";
   }
 
-  /*
-  header {
-    @apply text-4xl py-4;
-  }
-  */
-
   footer {
     @apply static bottom-auto;
   }
