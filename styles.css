@@ -133,6 +133,10 @@ footer {
     @apply w-full;
   }
 
+  /*
+   * content and features areas should have the same height (?)
+   */
+
   #features > a {
     @apply m-1 p-1;
   }
