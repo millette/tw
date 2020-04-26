@@ -46,11 +46,11 @@ h2 {
 }
 
 #features {
-  min-width: 16rem;
+  @apply flex items-center justify-center;
 }
 
 #features > a {
-  @apply text-sm block text-center m-2 bg-yellow-600 font-bold py-2 px-4 rounded;
+  @apply text-sm block text-center bg-yellow-600 font-bold p-1;
 }
 
 #features > a:hover {
@@ -59,6 +59,7 @@ h2 {
 
 #features > ul {
   list-style-type: "✓ ";
+  min-width: 14rem;
   @apply list-inside;
 }
 
