@@ -160,3 +160,15 @@ footer {
     @apply hidden;
   }
 }
+
+@screen lg {
+  #wrapper {
+    max-width: 1024px;
+    @apply mx-auto;
+  }
+
+  header,
+  footer {
+    width: 100vw;
+  }
+}
