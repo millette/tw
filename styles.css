@@ -17,11 +17,12 @@ body {
 
 /* misc styles using (@apply) tailwind */
 h1 {
-  @apply text-3xl;
+  @apply text-2xl font-semibold;
 }
 
 h2 {
-  @apply text-2xl;
+  /* @apply font-semibold; */
+  @apply text-lg font-semibold;
 }
 
 form,
@@ -59,7 +60,7 @@ form,
 
 #features > ul {
   list-style-type: "✓ ";
-  min-width: 14rem;
+  min-width: 16rem;
   @apply list-inside;
 }
 
@@ -128,6 +129,12 @@ footer {
       "about    about"
       "footer   footer";
   }
+
+  /*
+  h2 {
+    @apply font-normal;
+  }
+  */
 
   header {
     @apply w-full;
