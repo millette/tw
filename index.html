@@ -6,16 +6,16 @@
     <title>Launching soon?</title>
     <link rel="stylesheet" type="text/css" href="output.css" />
   </head>
-  <body class="text-black">
-    <div class="wrapper md:h-screen">
-      <header class="text-center text-blue-300 text-3xl md:text-4xl rym-shadow">
+  <body>
+    <div id="wrapper">
+      <header>
         <h1>
           Launching soon?
         </h1>
       </header>
 
-      <aside id="features" class="bg-blue-300 w-11/12 min-w-64 p-3">
-        <ul class="list-check list-inside">
+      <aside id="features">
+        <ul class="list-check">
           <li>Design your launch page</li>
           <li>Promote it</li>
           <li>Tune it</li>
@@ -23,18 +23,18 @@
           <li>Collect leads</li>
         </ul>
         <a
-          class="md:hidden text-sm block text-center m-2 bg-yellow-600 hover:bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+          class="md:hidden text-sm block text-center m-2 bg-yellow-600 hover:bg-yellow-400 font-bold py-2 px-4 rounded"
           href="#about"
           >More info</a
         >
       </aside>
 
-      <form class="p-3 bg-blue-300 w-11/12">
+      <form>
         <label for="email">
-          <h2 class="text-2xl">Enter your email</h2>
+          <h2>Enter your email</h2>
         </label>
         <input
-          class="w-full text-black placeholder-blue-900 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4 block appearance-none leading-normal"
+          class="w-full placeholder-blue-900 bg-white focus:outline-none focus:shadow-outline border border-gray-300 py-2 px-4"
           required
           type="email"
           id="email"
@@ -51,8 +51,8 @@
         </p>
       </form>
 
-      <aside id="about" class="p-3 bg-blue-300 w-11/12">
-        <h2 class="text-2xl">About</h2>
+      <aside id="about">
+        <h2>About</h2>
         <p>
           Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla
           bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla
@@ -60,9 +60,7 @@
         </p>
         <a class="md:hidden" href="#">TOP</a>
       </aside>
-      <footer
-        class="w-full p-2 bg-blue-300 text-center sticky bottom-0 md:static md:bottom-auto text-sm"
-      >
+      <footer>
         <p class="font-bold">
           Waglo Labs ©&nbsp;2020
         </p>
