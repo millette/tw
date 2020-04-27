@@ -7,7 +7,7 @@ body {
   background-image: url("beach-560.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  @apply bg-blue-300;
+  @apply bg-blue-800;
 }
 
 @media (min-width: 1024px) {
@@ -16,13 +16,12 @@ body {
   }
 }
 
-/* misc styles using (@apply) tailwind */
+/* misc styles using tailwind (@apply) */
 h1 {
   @apply text-2xl font-semibold;
 }
 
 h2 {
-  /* @apply font-semibold; */
   @apply text-lg font-semibold;
 }
 
@@ -135,24 +134,11 @@ footer {
       "footer   footer";
   }
 
-  /*
-  h2 {
-    @apply font-normal;
-  }
-  */
-
   header {
     @apply w-full;
   }
 
   /* content and features areas should have the same height (?) */
-  /*
-  form,
-  #features {
-    min-height: 12.4rem;
-  }
-  */
-
   #features > a {
     @apply m-1 p-1;
   }
@@ -177,7 +163,6 @@ footer {
   #features,
   #about {
     /* about,content and features areas should have the same height (?) */
-    /* min-height: 13rem; */
     max-width: 18rem;
     @apply flex flex-col justify-center;
   }
