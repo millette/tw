@@ -4,6 +4,14 @@
 
 /* main background image */
 body {
+  background: rgb(6, 60, 135);
+  background: linear-gradient(
+    21deg,
+    rgba(6, 60, 135, 1) 18%,
+    rgba(7, 99, 224, 1) 43%,
+    rgba(93, 153, 235, 1) 91%
+  );
+
   background-image: url("beach-560.jpg");
   background-size: cover;
   background-repeat: no-repeat;
